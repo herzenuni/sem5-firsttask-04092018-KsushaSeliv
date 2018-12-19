@@ -9,56 +9,47 @@
 #которое возникает в ситуации, когда пользователь выбрал тип не из списка обозначенного в условии задачи.
 
 
-
-
-
-
 class RangeException(Exception):
   def __init__(self,text):
         RangeException.txt = text
-
-
 try:
     a = int(input('Введите число от 0 до 9 включительно:'))
     if ((a<0) | (a>9)):
       raise RangeException('Число не подходит')
-      
 except RangeException:
     print('Число не подходит')
     a = int(input('Введите число от 0 до 9 включительно:'))
-
 except ValueError:
     print('Число не подходит')
     a = int(input('Введите число от 0 до 9 включительно:'))
-
 atype = input('bin, oct, hex:')
 
 
 
 def vvedennoechislo():
   
-    if (a == 0):
+    if (a==0):
       print("Ноль")
-    elif (a == 1):
+    elif (a==1):
       print("Один")
-    elif (a == 2):
+    elif (a==2):
       print("Два")
-    elif (a == 3):
+    elif (a==3):
       print("Три")
-    elif (a == 4):
+    elif (a==4):
       print("Четыре")
-    elif (a == 5):
+    elif (a==5):
       print("Пять")
-    elif (a == 6):
+    elif (a==6):
       print("Шесть")
-    elif (a == 7):
+    elif (a==7):
       print("Семь")
-    elif (a == 8):
+    elif (a==8):
       print("Восемь")
-    elif (a == 9):
+    elif (a==9):
       print("Девять")
     else:
-      print("Начните сначала")
+      print("Введите ещё раз")
 
 
     if atype == 'bin':
