@@ -45,3 +45,6 @@ vvedennoechislo(2,'oct')
 ##assert vvedennoechislo(6,'oct') == ('Шесть','0o6')
 ##assert vvedennoechislo(5,'oct') == ('Пять','0o5')
 ##assert vvedennoechislo(1,'hex') == ('Один','0x1')
+
+
+![Иллюстрация к проекту](https://github.com/herzenuni/sem5-firsttask-04092018-KsushaSeliv/blob/master/Lab1.JPG
