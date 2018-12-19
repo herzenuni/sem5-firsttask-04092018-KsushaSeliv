@@ -47,4 +47,4 @@ vvedennoechislo(2,'oct')
 ##assert vvedennoechislo(1,'hex') == ('Один','0x1')
 
 
-![alt](https://github.com/herzenuni/sem5-firsttask-04092018-KsushaSeliv/blob/master/Lab1.JPG)
+
