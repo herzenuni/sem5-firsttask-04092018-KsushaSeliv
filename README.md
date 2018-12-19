@@ -9,3 +9,5 @@
 
 ![alt text](https://github.com/herzenuni/sem5-firsttask-04092018-KsushaSeliv/blob/master/Lab1.JPG)
 ![alt text](https://github.com/herzenuni/sem5-firsttask-04092018-KsushaSeliv/blob/master/Lab2.JPG)
+![alt text](https://github.com/herzenuni/sem5-firsttask-04092018-KsushaSeliv/blob/master/SamRab1.JPG)
+![alt text](https://github.com/herzenuni/sem5-firsttask-04092018-KsushaSeliv/blob/master/SamRab1(2).JPG)
