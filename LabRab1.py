@@ -46,5 +46,7 @@ vvedennoechislo(2,'oct')
 #assert vvedennoechislo(5,'oct') == ('Пять','0o5')
 #assert vvedennoechislo(1,'hex') == ('Один','0x1')
 
+![alt text](https://drive.google.com/open?id=1GHpEWMP2C8wJQ8vMKee1TMhtyUzkAHh1)
+
 
 
