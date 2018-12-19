@@ -8,3 +8,4 @@
 Напишите тесты с использованием assert.
 
 ![alt text](https://github.com/herzenuni/sem5-firsttask-04092018-KsushaSeliv/blob/master/Lab1.JPG)
+![alt text](https://github.com/herzenuni/sem5-firsttask-04092018-KsushaSeliv/blob/master/Lab2.JPG)
