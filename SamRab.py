@@ -7,6 +7,10 @@
 class RangeException(Exception):
     def __init__(self, text):
         RangeException.txt = text
+        
+logger = [] #Модуль Logging позволяет вести журнал диагностики, который регистрирует события, связанные с работой приложений, 
+#а также ведение журнала аудита, который регистрирует события операций пользователя для анализа.
+#Особенно используется для записи событий в файл.
 
 try:
     a = int(input('Введите число от 0 до 9 включительно:'))
@@ -22,11 +26,6 @@ except ValueError:
     a = int(input('Введите число от 0 до 9 включительно:'))
 
 atype = input('bin, oct, hex:')
-
-
-def logger(a, atype):
-        with open('log.txt', 'a') as file:
-            file.write("+ str(a) + str(atype) + ")
 
 
 def vvedennoechislo():
@@ -62,3 +61,14 @@ def vvedennoechislo():
 
 
 vvedennoechislo()
+
+
+if len(logger) == 1:   
+     logger.append("Отсутствие исключений")
+try:
+      with open('text.txt', 'a') as f:
+        f.write(str(logger) + "\n")
+        f.write("Число: " + str(a) + " Система счисления: " +str(atype))
+except IOError: #Возбуждается, когда операция ввода-вывода (например, при использовании print() или open()) не проходит. 
+#Например: «файл не найден», «диск заполнен» и т.п..
+      print("Что-то пошло не так")
