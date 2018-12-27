@@ -131,3 +131,4 @@ def vvedennoechislo():
   assert (3,'bin') == ('Один', '011'), 'Ошибка'
   assert (2,'oct') == ('Два', '0x2'), 'Ошибка'
 ```
+![alt](https://github.com/herzenuni/sem5-firsttask-04092018-KsushaSeliv/blob/master/11.JPG)
