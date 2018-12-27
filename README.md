@@ -58,3 +58,4 @@ def vvedennoechislo():
   assert (2,'oct') == ('Два', '0x2'), 'Ошибка'
   
 ```
+![alt](https://github.com/herzenuni/sem5-firsttask-04092018-KsushaSeliv/blob/master/10.JPG)
