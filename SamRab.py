@@ -4,63 +4,62 @@
 #При записи в файл предусмотреть вероятность возникновения исключительных ситуаций и создать собственный 
 #класс или классы для обработки исключительных ситуаций при записи в файл. 
 
-class RangeException(Exception):
-    def __init__(self, text):
+class RangeException(Exception): #создаём класс, наследуя Exeption, для обработки исключения, которое возникает в ситуации, когда вводится число не из описанного в условии диапазона(0-9);
+
+#создаём конструктор с входным аргументом
+  def __init__(self, text): 
         RangeException.txt = text
-        
-logger = [] #Модуль Logging позволяет вести журнал диагностики, который регистрирует события, связанные с работой приложений, 
-#а также ведение журнала аудита, который регистрирует события операций пользователя для анализа.
-#Особенно используется для записи событий в файл.
+
+logger = [] 
 
 try:
     a = int(input('Введите число от 0 до 9 включительно:'))
-    if ((a < 0) | (a > 9)):
-        raise RangeException('Число не подходит')
-
-except RangeException:
+    if ((a<0)|(a>9)):
+      raise RangeException('Число не подходит') #если число не подходит, вылетает исключение
+except RangeException: #прописываем наш тип исключения, он просто принтится
     print('Число не подходит')
     a = int(input('Введите число от 0 до 9 включительно:'))
 
 except ValueError:
     print('Число не подходит')
     a = int(input('Введите число от 0 до 9 включительно:'))
-
 atype = input('bin, oct, hex:')
 
 
-def vvedennoechislo():
-    if (a == 0):
-        print("Ноль")
-    elif (a == 1):
-        print("Один")
-    elif (a == 2):
-        print("Два")
-    elif (a == 3):
-        print("Три")
-    elif (a == 4):
-        print("Четыре")
-    elif (a == 5):
-        print("Пять")
-    elif (a == 6):
-        print("Шесть")
-    elif (a == 7):
-        print("Семь")
-    elif (a == 8):
-        print("Восемь")
-    elif (a == 9):
-        print("Девять")
-    else:
-        print("Начните сначала")
 
-    if atype == 'bin':
-        print("Ответ:", bin(a))
-    elif atype == 'oct':
-        print("Ответ:", oct(a))
-    elif atype == 'hex':
-        print("Ответ:", hex(a))
+def vvedennoechislo(): 
+  if (a==0): 
+    print("Ноль")
+  elif (a==1):
+    print("Один")
+  elif (a==2):
+    print("Два")
+  elif (a==3):
+    print("Три")
+  elif (a==4):
+    print("Четыре")
+  elif (a==5):
+    print("Пять")         
+  elif (a==6):
+    print("Шесть")
+  elif (a==7):
+    print("Семь")
+  elif (a==8):
+    print("Восемь")
+  elif (a==9):
+    print("Девять")
+  else:
+    print("Вы ввели не то число")
 
 
-vvedennoechislo()
+  if atype == 'bin':
+        print(bin(a))
+  elif atype == 'oct':
+        print(oct(a))
+  elif atype == 'hex':
+        print(hex(a))
+    
+     
 
 
 if len(logger) == 1:   
@@ -72,3 +71,13 @@ try:
 except IOError: #Возбуждается, когда операция ввода-вывода (например, при использовании print() или open()) не проходит. 
 #Например: «файл не найден», «диск заполнен» и т.п..
       print("Что-то пошло не так")
+
+vvedennoechislo()      
+
+#немного тестов
+def vvedennoechislo(): 
+  assert (7,'bin') == ('Семь', '0b121'), 'Ошибка'
+  assert (1,'oct') == ('Один', '0x1'), 'Ошибка'
+  assert (2,'hex') == ('Два', '0o2'), 'Ошибка'
+  assert (3,'bin') == ('Один', '011'), 'Ошибка'
+  assert (2,'oct') == ('Два', '0x2'), 'Ошибка'
