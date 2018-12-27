@@ -6,9 +6,13 @@
 #Предусмотрите обработку исключительных ситуаций. Напишите тесты с использованием assert
 
 
+#функция c аргументами: введённое число(a) и его тип ((bin, oct, hex)(atype))
 
-def vvedennoechislo(a, atype):
-  if (a==0):
+def vvedennoechislo(a, atype): 
+  
+  #далее, проверяем, входит ли число, которое ввёл пользователь в нужный нам промежуток(0-9)
+  
+  if (a==0): 
     print("Ноль")
   elif (a==1):
     print("Один")
@@ -39,12 +43,17 @@ def vvedennoechislo(a, atype):
   elif atype == 'hex':
         print(hex(a))
     
-vvedennoechislo(2,'oct')        
+vvedennoechislo(8,'oct')        
+vvedennoechislo(7,'bin') 
+vvedennoechislo(2,'hex')
 
-#def vvedennoechislo():
-#assert vvedennoechislo(6,'oct') == ('Шесть','0o6')
-#assert vvedennoechislo(5,'oct') == ('Пять','0o5')
-#assert vvedennoechislo(1,'hex') == ('Один','0x1')
+#немного тестов
+def vvedennoechislo(): 
+  assert (7,'bin') == ('Семь', '0b121'), 'Ошибка'
+  assert (1,'oct') == ('Один', '0x1'), 'Ошибка'
+  assert (2,'hex') == ('Два', '0o2'), 'Ошибка'
+  assert (3,'bin') == ('Один', '011'), 'Ошибка'
+  assert (2,'oct') == ('Два', '0x2'), 'Ошибка'
 
 
 
